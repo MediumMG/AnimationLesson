@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/fragment_view_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/alpha" />
+
+    <Button
+        android:id="@+id/fragment_view_scale"
+        android:layout_below="@id/fragment_view_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/scale" />
+
+    <Button
+        android:id="@+id/fragment_view_rotate"
+        android:layout_below="@id/fragment_view_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/rotate" />
+
+    <Button
+        android:id="@+id/fragment_view_translate"
+        android:layout_below="@id/fragment_view_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/translate" />
+
+    <Button
+        android:id="@+id/fragment_view_set"
+        android:layout_below="@id/fragment_view_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/set" />
+
+    <TextView
+        android:id="@+id/fragment_view_custom"
+        android:layout_below="@id/fragment_view_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/click_me"/>
+
+</RelativeLayout>

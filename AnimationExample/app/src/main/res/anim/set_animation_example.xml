@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+    <scale
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="1.2"
+        android:toYScale="1.2"
+        android:duration="500"
+        android:fillAfter="true"
+        android:interpolator="@android:interpolator/linear"/>
+
+    <set android:fillBefore="true"
+        android:fillAfter="true"
+        android:startOffset="500">
+        <translate
+            android:duration="1000"
+            android:fromXDelta="0"
+            android:fromYDelta="0"
+            android:interpolator="@android:interpolator/linear"
+            android:toXDelta="200%"
+            android:toYDelta="0" />
+        <alpha
+            android:duration="1000"
+            android:fromAlpha="1.0"
+            android:interpolator="@android:interpolator/accelerate_cubic"
+            android:toAlpha="0.0" />
+    </set>
+</set>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trinkmobiles.school.animation.fragments.PropertyFragment">
+
+    <Button
+        android:id="@+id/fragment_property_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/alpha" />
+
+    <Button
+        android:id="@+id/fragment_property_scale"
+        android:layout_below="@id/fragment_property_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/scale" />
+
+    <Button
+        android:id="@+id/fragment_property_rotate"
+        android:layout_below="@id/fragment_property_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/rotate" />
+
+    <Button
+        android:id="@+id/fragment_property_translate"
+        android:layout_below="@id/fragment_property_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/translate" />
+
+    <Button
+        android:id="@+id/fragment_property_set"
+        android:layout_below="@id/fragment_property_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="@string/set" />
+
+</RelativeLayout>
