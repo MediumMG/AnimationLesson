@@ -25,6 +25,7 @@ public class DrawableFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_drawable, container, false);
         ivSound = (ImageView) rootView.findViewById(R.id.fragment_drawable_sound);
+
         ivSound.setOnClickListener(new SoundOnClick());
 
         return rootView;
