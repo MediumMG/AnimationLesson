@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.trinkmobiles.animationexample.R;
 
@@ -54,6 +55,27 @@ public class PropertyFragment extends Fragment {
 
         public ViewOnClick(int animResID) {
             mAnimator = AnimatorInflater.loadAnimator(getActivity(), animResID);
+            mAnimator.addListener(new Animator.AnimatorListener() {
+                @Override
+                public void onAnimationStart(Animator animation) {
+                    Toast.makeText(getActivity(), "Start", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    Toast.makeText(getActivity(),"End", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onAnimationCancel(Animator animation) {
+                    Toast.makeText(getActivity(),"Cancel", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animation) {
+                    Toast.makeText(getActivity(),"Repeat", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
 
         public ViewOnClick(Animator animator) {

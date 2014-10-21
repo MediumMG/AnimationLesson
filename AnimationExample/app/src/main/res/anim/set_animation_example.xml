@@ -14,7 +14,7 @@
 
     <set android:fillBefore="true"
         android:fillAfter="true"
-        android:startOffset="500">
+        android:startOffset="0">
         <translate
             android:duration="1000"
             android:fromXDelta="0"
